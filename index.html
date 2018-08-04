@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>yi</title>
+  <title>yi&#39; blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="this is my blog">
 <meta property="og:type" content="website">
-<meta property="og:title" content="yi">
+<meta property="og:title" content="yi&#39; blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="yi">
+<meta property="og:site_name" content="yi&#39; blog">
 <meta property="og:description" content="this is my blog">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="yi">
+<meta name="twitter:title" content="yi&#39; blog">
 <meta name="twitter:description" content="this is my blog">
   
   
@@ -44,7 +44,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="http://cdn.duitang.com/uploads/item/201206/20/20120620164633_TT5nd.jpeg" class="js-avatar">
+			<img src="/assets/祈妹.jpeg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">だざい おさむ</a></h1>
@@ -86,8 +86,6 @@
 		        
 					<a class="bilibili" target="_blank" href="https://space.bilibili.com/35837419/#/" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
-					<a class="mail" target="_blank" href="/nqh1999@outlook.com" title="mail"><i class="icon-mail"></i></a>
-		        
 			</div>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
 src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></iframe>
@@ -106,7 +104,7 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="http://cdn.duitang.com/uploads/item/201206/20/20120620164633_TT5nd.jpeg" class="js-avatar">
+				<img src="/assets/祈妹.jpeg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">だざい おさむ</h1>
@@ -130,8 +128,6 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
 						<a class="qq" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=651525291&site=qq&menu=yes" title="qq"><i class="icon-qq"></i></a>
 			        
 						<a class="bilibili" target="_blank" href="https://space.bilibili.com/35837419/#/" title="bilibili"><i class="icon-bilibili"></i></a>
-			        
-						<a class="mail" target="_blank" href="/nqh1999@outlook.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -159,27 +155,14 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-my-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-CSRF" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/08/03/my-first-blog/">my first blog</a>
-    </h1>
-  
-
-        
-        <a href="/2018/08/03/my-first-blog/" class="archive-article-date">
-  	<time datetime="2018-08-03T15:38:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-08-03</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <hr>
+<h2 id="CSRF"><a href="#CSRF" class="headerlink" title="CSRF"></a>CSRF</h2><p>CSRF是Cross Site Request Forgery的缩写（也缩写为CSRF），直译过来就是跨站请求伪造的意思，也就是在用户会话下做一些GET/POST的事情——这些事情用户未必知道和愿意做，你可以把它想做HTTP会话劫持。<br>CSRF出现的原理是重要操作的所有参数都可以被攻击者猜测，从而攻击者可以构造伪造请求。<br>绕过方式可以简单分为get和post两种，get中也有多种攻击方式，主要一种是利用cookie。攻击者请求利用html便签中带img,iframe,script等带src属性的标签,发送第三方cookie，成功认证。主流浏览器中对Third-party Cookie（本地cookie）是否默认拦截决定了这种方式是否有效。<br>然而P3P头可以绕过这种拦截（P3P是一种被称为个人隐私安全平台项目（the Platform for Privacy Preferences）的标准），如果网页给浏览器的http头含有P3P头，将允许浏览器发送第三方cookie。<br>至于post类型的攻击方式，(⊙o⊙)…，还没了解到。<br>CSRF的防御主要分为三种，第一种是验证码，也是最简洁有效的方式。第二种是检查referer，缺陷在于并非什么时候都能取到referer,第三种是使用token，也是业界正在用的一种方式，主要是根据不可预测性设计。检测CSRF漏洞都是体力活了，先抓取一个正常请求的数据包，然后去掉referer字段再重新提交，如果还是有效那基本上就存在问题了。</p>
+
       
 
       
@@ -191,7 +174,7 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/03/my-first-blog/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/08/04/CSRF/">展开全文 >></a>
         </p>
       
 
@@ -306,10 +289,11 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-      	</div>
+         </div>
     </div>
   </div>
 </footer>
+
     </div>
     <script>
 	var yiliaConfig = {
@@ -333,7 +317,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 
 
-
+<script  async  src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
@@ -465,7 +449,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">月厨&lt;br&gt;沉迷fgo&lt;br&gt;</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">月厨&lt;br&gt;沉迷fgo&lt;br&gt;贞德厨</div>
   	  	
     	</section>
     
