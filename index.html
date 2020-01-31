@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>yi&#39; blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="this is my blog">
+  <meta name="description" content="welcome to my blog">
 <meta property="og:type" content="website">
 <meta property="og:title" content="yi&#39; blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="yi&#39; blog">
-<meta property="og:description" content="this is my blog">
+<meta property="og:description" content="welcome to my blog">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="yi&#39; blog">
-<meta name="twitter:description" content="this is my blog">
+<meta name="twitter:description" content="welcome to my blog">
   
   
     <link rel="icon" href="/favicon.png">
@@ -44,7 +44,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/assets/祈妹.jpeg" class="js-avatar">
+			<img src="/assets/黑贞可爱.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">人间失格</a></h1>
@@ -58,7 +58,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/archives">所有文章</a></li>
 	        
 			</ul>
 		</nav>
@@ -87,8 +87,7 @@
 					<a class="bilibili" target="_blank" href="https://space.bilibili.com/35837419/#/" title="bilibili"><i class="icon-bilibili"></i></a>
 		        
 			</div>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 
-src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=28854949&auto=0&height=66"></iframe>
 		</nav>
 	</header>		
 </div>
@@ -104,7 +103,7 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/assets/祈妹.jpeg" class="js-avatar">
+				<img src="/assets/黑贞可爱.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">人间失格</h1>
@@ -138,7 +137,7 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/archives">所有文章</a></li>
 		        
 				</ul>
 			</nav>
@@ -155,14 +154,30 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-CSRF" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-绝对零度4影评" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/01/绝对零度4影评/">绝对零度4剧评</a>
+    </h1>
+  
+
+        
+        <a href="/2020/01/01/绝对零度4影评/" class="archive-article-date">
+  	<time datetime="2019-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr>
-<h2 id="CSRF"><a href="#CSRF" class="headerlink" title="CSRF"></a>CSRF</h2><p>CSRF是Cross Site Request Forgery的缩写（也缩写为CSRF），直译过来就是跨站请求伪造的意思，也就是在用户会话下做一些GET/POST的事情——这些事情用户未必知道和愿意做，你可以把它想做HTTP会话劫持。<br>CSRF出现的原理是重要操作的所有参数都可以被攻击者猜测，从而攻击者可以构造伪造请求。<br>绕过方式可以简单分为get和post两种，get中也有多种攻击方式，主要一种是利用cookie。攻击者请求利用html便签中带img,iframe,script等带src属性的标签,发送第三方cookie，成功认证。主流浏览器中对Third-party Cookie（本地cookie）是否默认拦截决定了这种方式是否有效。<br>然而P3P头可以绕过这种拦截（P3P是一种被称为个人隐私安全平台项目（the Platform for Privacy Preferences）的标准），如果网页给浏览器的http头含有P3P头，将允许浏览器发送第三方cookie。<br>至于post类型的攻击方式，(⊙o⊙)…，还没了解到。<br>CSRF的防御主要分为三种，第一种是验证码，也是最简洁有效的方式。第二种是检查referer，缺陷在于并非什么时候都能取到referer,第三种是使用token，也是业界正在用的一种方式，主要是根据不可预测性设计。检测CSRF漏洞都是体力活了，先抓取一个正常请求的数据包，然后去掉referer字段再重新提交，如果还是有效那基本上就存在问题了。</p>
-
+        <p>最近因为疫情严重待在家里，发现绝对零度4更新了，基于自己大脑有限，决定把剧情简要记录。<br>
+        
+          <a class="article-more-a" href="/2020/01/01/绝对零度4影评/#more">more >></a>
+        
       
 
       
@@ -170,11 +185,26 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日剧</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">绝对零度4</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/04/CSRF/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/01/01/绝对零度4影评/">展开全文 >></a>
         </p>
       
 
@@ -204,36 +234,30 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-2020.1追番表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/07/31/hello-world/">Hello World</a>
+      <a class="article-title" href="/2020/01/01/2020.1追番表/">2020.1月追番</a>
     </h1>
   
 
         
-        <a href="/2018/07/31/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-31T04:07:13.849Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-31</time>
+        <a href="/2020/01/01/2020.1追番表/" class="archive-article-date">
+  	<time datetime="2019-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        <p>决定把每个季度的追番表记录一下<br>
+        
+          <a class="article-more-a" href="/2020/01/01/2020.1追番表/#more">more >></a>
+        
       
 
       
@@ -241,11 +265,98 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">动漫</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/07/31/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/01/01/2020.1追番表/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-基础配置命令" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/01/01/基础配置命令/">博客基础配置</a>
+    </h1>
+  
+
+        
+        <a href="/2020/01/01/基础配置命令/" class="archive-article-date">
+  	<time datetime="2019-12-31T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-01-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>博客基础配置+markdown语法<br>
+        
+          <a class="article-more-a" href="/2020/01/01/基础配置命令/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">系统配置</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/01/01/基础配置命令/">展开全文 >></a>
         </p>
       
 
@@ -289,9 +400,10 @@ src="//music.163.com/outchain/player?type=2&id=28815250&auto=1&height=66"></ifra
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
-         </div>
+      	</div>
     </div>
   </div>
+  
 </footer>
 
     </div>
@@ -317,7 +429,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 
 
-<script  async  src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
@@ -368,6 +480,22 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日剧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">绝对零度4</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">动漫</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">系统配置</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
@@ -426,19 +554,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
+              <a href="https://crustsalt.ink/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>吕佬</a>
             </li>
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
+              <a href="https://doubler.cn/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>R总</a>
             </li>
           
         </ul>
@@ -449,7 +569,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">月厨&lt;br&gt;沉迷fgo&lt;br&gt;贞德厨</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">月厨 沉迷fgo 贞德厨 &lt;br&gt; from 某电 咸鱼翻身中</div>
   	  	
     	</section>
     
