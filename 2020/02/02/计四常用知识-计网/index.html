@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="yi&#39; blog">
 <meta property="og:description" content="寒假咸鱼期间把计四刷完了。计四考的是操作系统和计算机网络。把一些还算有意思的知识点整理一下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-02T14:02:24.354Z">
+<meta property="og:updated_time" content="2020-02-03T14:34:36.675Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机四级-信息安全工程师常识-计网">
 <meta name="twitter:description" content="寒假咸鱼期间把计四刷完了。计四考的是操作系统和计算机网络。把一些还算有意思的知识点整理一下。">
@@ -182,19 +182,41 @@
 <h1 id="2-计网"><a href="#2-计网" class="headerlink" title="2.计网"></a>2.计网</h1><h2 id="单选"><a href="#单选" class="headerlink" title="单选"></a>单选</h2><ol>
 <li><p>常用的对称加密：<strong>DES</strong>,IDEA,RC2,RC4,Skipjack算法等<br>常见公钥加密算法：<strong>RSA,ElGamal算法，背包加密算法</strong><br>对邮件常用编码方式：base64,quoted-printable  </p>
 </li>
-<li><p>AES属于私钥密码，分组128位，秘钥长度为128，192,256位<br>Caesar密码的秘钥最大可能取值数量是25<br>DES密钥长度64位<br>RSA可用于数字签名<br>ElGamal密文长度是明文两倍<br>RCS属于对称加密</p>
+<li><p>AES属于私钥密码，分组128位，秘钥长度为128，192,256位<br>Caesar密码的秘钥最大可能取值数量是25<br>DES密钥长度64位，ISO认定，由美国国家标准局制定，每轮置换函数相同<br>RSA可用于数字签名,加密长度取决于秘钥长度<br>ElGamal密文长度是明文两倍，可用于数字签名<br>RCS属于对称加密<br>Blowfish算法需要加法和异或运算，算法秘钥长度可变  </p>
 </li>
-<li><p>网络安全等级<br>C2&gt;C1<br>B1具有托管访问控制<br>B3具有强制安全保护类型</p>
+<li><p>网络安全等级<br>C2&gt;C1<br>B1具有托管访问控制<br>B3具有强制安全保护类型，具有安全内存  </p>
 </li>
-<li><p>HFC 有线电视网络<br>ADSL 普通电话线，适合家庭用户使用</p>
+<li><p>Internet接入方式主要有4种：通过电话线接入，利用ADSL.利用HFC，通过数据通信线路接入<br>HFC 有线电视网络<br>ADSL 普通电话线，适合家庭用户使用<br>上下行速率可不同，都需要调制解调   </p>
 </li>
-<li><p>无线自组网英文缩写 Ad hoc，无中心节点  </p>
+<li><p>无线自组网英文缩写 Ad hoc，无中心节点，不需要基站的“对等结构”移动通信模式  </p>
 </li>
-<li><p>SSL工作在传输层，常用于SSL协议<br>SIP为应用层协议，拓展为SIMPLE</p>
+<li><p>SSL工作在传输层，常用于SSL协议<br>TLS为传输层协议<br>SIP为应用层协议，拓展为SIMPLE，采用e-mail地址格式<br>IP工作在互联层<br>IPsec工作于网络层，包含AH(身份认证，不提供数据加密）,ESP协议，SA是三元组<br>SNMP工作于应用层  </p>
 </li>
-<li><p>广域网 WAN<br>无线网状网络 WMN<br>局域网 LAN<br>无线传感网 WSN<br>无限局域网 WLAN，支持对等结构通信模式  </p>
+<li><p>广域网 WAN<br>城域网 MAN<br>个人区域网 PAN<br>无线网状网络 WMN<br>局域网 LAN<br>无线传感网 WSN<br>无限局域网 WLAN，支持对等结构通信模式<br>虚拟局域网 VLAN，节点不受物理位置限制  </p>
 </li>
-<li><p>环状拓扑：传输顺利固定的网络拓扑<br>星型拓扑：通过中心结点完成集中控制</p>
+<li><p>环状拓扑：传输顺利固定的网络拓扑<br>星型拓扑：通过中心结点(瓶颈)完成集中控制，当前局域网常用星型<br>网状拓扑：结点之间连接无规律，需使用路由选择，结构复杂  </p>
+</li>
+<li><p>即时通信系统<br>RFC2778规定其通信模式，定义了视频，文件，通信功能<br>IM通用协议主要代表:基于SIP的SIMPLE，基于Jabber的XMPP（实体地址称为JID,采用e-mail地址格式）<br>支持两种最基本的服务：呈现服务和即时信息服务<br>通信方式：用户/用户 用户/服务器<br>QQ以UDP为主，TCP为辅；基于自身协议开发<br>MSN用MSNP<br>ICQ,AOL采用OSCAR<br>以色列的ICQ是最早的IM系统  </p>
+</li>
+<li><p>物理网络MTU：规定一个帧最多可携带数据量  </p>
+</li>
+<li><p>Ethernet帧<br>头部长度字段的值<strong>不包括帧前定界符</strong>的长度<br>网卡使用物理地址长度为48位<br>网络层，物理地址，签到码字段长度由8B组成<br>前导码字段长度为7B。帧前定界符1B<br>Ethernet帧最小长度64B，最大长度1518B；  数据字段最小长度46B，最大长度1500B<br>物理地址后3字节可由厂家分配<br>帧长度结算，不计算前导码，帧前定界符</p>
+</li>
+<li><p>DNS资源记录：<br>A表示主机<br>MA表示邮件交换机<br>HINFO表示主机描述<br>SOA表示授权开始</p>
+</li>
+<li><p>Maze是被北大开发的个人信息文件系统，支持断点续传<br>认证参考Kerberos机制  </p>
+</li>
+<li><p>Telnet中使用NVT目的是：屏蔽不同用户终端格式差异</p>
+</li>
+<li><p>在无选项和填充的情况下，IP报头长度域的值是5<br>IPv6基本头长度为40字节  </p>
+</li>
+<li><p>BitTorrent<br>源于MIT的开源系统<br>种子文件中包含Tracker服务器信息<br>下载人数越多，速度越快<br>种子后缀为“.Torrent”</p>
+</li>
+<li><p>邮件<br>读取邮件：POP3,IMAP<br>发送邮件：SMTP</p>
+</li>
+<li><p>FTP<br>数据连接模式：主动，被动<br>passive:使用被动传送模式<br>pwd:显示远程主机当前目录<br>delete：删除远程主机命令</p>
+</li>
+<li><p>系统<br>Unix（第一版本用汇编写的)：IBM的AIX，Sun的Solaris,HP的HP-UX<br>Windows：Vista<br>Linux:Red hat  </p>
 </li>
 </ol>
 <h2 id="多选"><a href="#多选" class="headerlink" title="多选"></a>多选</h2><ol>
@@ -206,8 +228,11 @@
 </li>
 <li><p>VOD服务包括NVOD（就近式视频点播）,TVOD,IVOD  </p>
 </li>
-<li><p>POP3常用指令：<br>RSET 中止处理<br>NOOP 无操作  </p>
+<li><p>POP3常用指令：<br>RSET 中止处理<br>NOOP 无操作<br>STAT 查询报文总数和长度  </p>
 </li>
+</ol>
+<ol start="6">
+<li>IEEE802.11g标准使用的波段是2.4GHz<br>IEEE802.11帧控制字段长度为2字节<br>IEEE802.1定义局域网结构<br>IEEE802.3 MAC 物理层<br>IEEE802.4是令牌网的标准  </li>
 </ol>
 
       
@@ -448,15 +473,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">社工</a>
+                <a href="javascript:void(0)" class="js-tag color3">计四</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">系统配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">计四</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -465,6 +486,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">绝对零度4</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">社工</a>
               </li>
             
             <div class="clearfix"></div>

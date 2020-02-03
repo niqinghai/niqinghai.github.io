@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="yi&#39; blog">
 <meta property="og:description" content="寒假咸鱼期间把计四刷完了。计四考的是操作系统和计算机网络。把一些还算有意思的知识点整理一下。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-02-02T13:16:35.941Z">
+<meta property="og:updated_time" content="2020-02-03T14:34:39.798Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机四级-信息安全工程师常识-操作系统">
 <meta name="twitter:description" content="寒假咸鱼期间把计四刷完了。计四考的是操作系统和计算机网络。把一些还算有意思的知识点整理一下。">
@@ -218,14 +218,17 @@
 </li>
 <li><p>程序局部性原理分为空间局部性和时间局部性，<br>空间局部性指程序代码的顺序性，<br>时间局部性指程序中存在大量的循环</p>
 </li>
-<li><h2 id="多选"><a href="#多选" class="headerlink" title="多选"></a>多选</h2></li>
+<li><p>优化<strong>寻道时间</strong>可以<strong>显著改善</strong>磁盘读写能力<br><strong>调度时间**</strong>不影响**磁盘读写性能</p>
+</li>
+</ol>
+<h2 id="多选"><a href="#多选" class="headerlink" title="多选"></a>多选</h2><ol>
 <li><p>在Unix中，文件权限是777，顺序为文件属主，同组用户，其他用户；对应二进制位为可读，可写，可执行<br>777指文件属主，同组用户，其他用户都可读，可写，可执行  </p>
 </li>
 <li><p>形成死锁条件：互斥，请求和保持，不剥夺，环路等待<br>解除死锁方式：剥夺某些进程所占有的资源，撤销某些进程，重新启动系统<br>预防死锁策略：建立SPOOLing系统，一次分配所有资源，有序分配资源，剥夺其他进程资源</p>
 </li>
 <li><p>按文件组织形式划分:普通文件，目录文件，特殊文件<br>按文件保护形式划分:可执行文件，只读文件，读写文件<br>按文件用途划分:系统文件，库函数文件，用户文件<br>按文件存放时间划分:档案文件，临时问价，永久文件  </p>
 </li>
-<li><p>判断一个<strong>页面是否调入内存</strong>需要用到<strong>驻留位/中断位 </strong><br>某<strong>进程一个页面内容被修改</strong>（页面置换）需要用到<strong>访问位和修改位</strong><br>发生<strong>缺页中断</strong>需要用到<strong>驻留位</strong>，其他位置不变<br><strong>页表项中通常需要增加消息</strong>需要用到<strong>有效位，修改位，访问位</strong><br><strong>将磁盘一个页面调入内存</strong>需要用到<strong>内存块号，驻留位，访问位</strong></p>
+<li><p>判断一个<strong>页面是否调入内存</strong>需要用到<strong>驻留位/中断位 </strong><br>某<strong>进程一个页面内容被修改</strong>（页面置换）需要用到<strong>访问位和修改位</strong><br><strong>虚拟页式，创建一个新的进程并调度运行</strong>，需要用到<strong>内存块号，访问位和驻留位</strong><br>发生<strong>缺页中断</strong>需要用到<strong>驻留位</strong>，其他位置不变<br><strong>页表项中通常需要增加消息</strong>需要用到<strong>有效位，修改位，访问位</strong><br><strong>将磁盘一个页面调入内存</strong>需要用到<strong>内存块号，驻留位，访问位</strong></p>
 </li>
 </ol>
 <ol start="5">
@@ -477,15 +480,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">社工</a>
+                <a href="javascript:void(0)" class="js-tag color3">计四</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">系统配置</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">计四</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -494,6 +493,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">绝对零度4</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">社工</a>
               </li>
             
             <div class="clearfix"></div>
